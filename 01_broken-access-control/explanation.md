@@ -2,12 +2,15 @@
 #recon #information-disclosure
 
 It’s a good approach to know what to attack before attacking, so I ran #dirb on http://localhost:4942
+
 ![](./Resources/img01.png)
 
 - /robots.txt :
+
 ![](./Resources/img03.png)
 
 - /staff
+
 ![](./Resources/img04.png)
 
 /staff page gives good hints: 
@@ -19,6 +22,7 @@ It’s a good approach to know what to attack before attacking, so I ran #dirb o
 - PocketBase on :8090 confirmed → #pocketbase
 
 I ran #dirb on http://localhost:8090/
+
 ![](./Resources/img02.png)
 
 
