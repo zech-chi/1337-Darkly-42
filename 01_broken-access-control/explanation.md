@@ -1,16 +1,13 @@
 ## Chapter 1 — Information Disclosure 
 #recon #information-disclosure
 
-It’s a good approach to know what to attack before attacking, so I ran #dirb on http://localhost:4942
-
+It’s a good approach to know what to attack before attacking, so I ran #dirb on http://localhost:4942 \\
 ![](./Resources/img01.png)
 
-- /robots.txt :
-
+- /robots.txt : \\
 ![](./Resources/img03.png)
 
-- /staff
-
+- /staff \\
 ![](./Resources/img04.png)
 
 /staff page gives good hints: 
@@ -21,7 +18,7 @@ It’s a good approach to know what to attack before attacking, so I ran #dirb o
 - "Try PATCH /api/profile" → #mass-assignment
 - PocketBase on :8090 confirmed → #pocketbase
 
-I ran #dirb on http://localhost:8090/
+I ran #dirb on http://localhost:8090/ \\
 
 ![](./Resources/img02.png)
 
