@@ -1,4 +1,4 @@
-#Chapter 4 — Unrestricted File Upload
+# Chapter 4 — Unrestricted File Upload
 #unrestricted-upload #file-upload 
 
 The settings page lets me change my avatar. It should only accept images, but the server checks nothing — it accepts ANY file type. I logged in as jdoe and uploaded an SVG file (not a normal image) to `POST /upload/avatar`. The server accepted it and redirected me to the settings page, where the flag appeared: `location: /profile/me/settings?upload_flag=FLAG{...}` 
