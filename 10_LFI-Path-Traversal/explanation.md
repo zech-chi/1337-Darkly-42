@@ -13,7 +13,6 @@ So the server itself told me the name of a sensitive file: `private_notes.txt`.
 The server returned the file. Inside, the dev even wrote that this endpoint "joins paths without sanitizing" — and the flag was there:
 	`🚩🚩🚩 FLAG{d0t_d0t_sl4sh_4ll_th3_w4y_d0wn}`
 
-(Note: `../` on `/static/` did NOT work — that path is hardened. But `/projects/download` is a different, custom endpoint that is vulnerable. A vuln missing on one endpoint can still exist on another.)
 
 ### Impact
 An attacker can read files outside the allowed folder — config files, secrets, source code, or private notes. Here it leaked a private notes file with a flag, but the same trick could read much more sensitive files on the server.
